@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('users_modules', function (Blueprint $table) {
             $table->id();
+            $table->boolean('active');
             $table->timestamps();
 
             $table->unsignedBigInteger('user_id');
